@@ -1,123 +1,86 @@
-# 👤 Human Detection using YOLOv8
+Real-Time Human Detection with YOLOv8
 
-This project demonstrates **real-time human (person) detection** using the **YOLOv8 model** from [Ultralytics](https://github.com/ultralytics/ultralytics).  
-It works on both **webcam streams** and **video files**, highlighting detected persons with bounding boxes and a total count.
+A simple and fast human detection system built using YOLOv8 and OpenCV.
+This project detects people in real-time from a webcam or video file, draws bounding boxes around them, and displays the total person count on screen.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🚀 Features
+Real-time human detection using webcam
+Detect people from video files
+Displays live person count
+Lightweight and fast YOLOv8 models
+Easy to customize and extend
+Beginner-friendly project structure
 
-## 📖 Project Overview
-The goal of this project is to build a **real-time person detection system** using the YOLOv8 deep learning model.  
-The system can process input from:
-- A **webcam** (live detection)  
-- A **video file** (offline detection)  
 
-It identifies all persons in each frame, draws bounding boxes, labels them, and counts the total persons detected.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## ⚙️ Tools & Technologies
-- **Python 3.8+** – Core programming language  
-- **OpenCV (cv2)** – Video processing and visualization  
-- **YOLOv8 (Ultralytics)** – Deep learning object detection model  
-- **PyWin32** – Windows-specific utilities (mutex handling)  
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## ✨ Features
-- 🔍 Detect humans in **real-time** using webcam  
-- 🎥 Detect humans from **video files**  
-- 📦 Uses **YOLOv8n / YOLOv8s** (lightweight and accurate)  
-- 📊 Displays total number of persons detected in each frame  
-- ✅ Easy to customize for different YOLOv8 variants  
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## 📂 Project Structure
-
-├── person_video.py 
-
-├── person_webcam.py 
-
-├── input_video.mp4 
-
-├── output_video.mp4 
-
-├── README.md 
-
+🛠️ Tech Stack
+Python
+OpenCV
+YOLOv8 (Ultralytics)
+NumPy
+📁 Project Structure
+Human-Detection/
+│
+├── person_webcam.py
+├── person_video.py
+├── input_video.mp4
+├── output_video.mp4
 ├── yolov8n.pt
+├── requirements.txt
+└── README.md
 
-└── requirements.txt 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📦 Installation
 
-## 🚀 Usage
+Clone the repository:
 
-After installing the dependencies, you can run the project in two modes:
+git clone https://github.com/your-username/Human-Detection.git
+cd Human-Detection
 
-▶️ Run Detection on Webcam
+Install dependencies:
 
-Start real-time person detection using your laptop/PC webcam:
+pip install -r requirements.txt
+▶️ Run the Project
+Webcam Detection
 
-```bash
-python person_webcam.py 
-```
+Start real-time detection using your webcam:
 
-▶️ Run Detection on a Video File
+python person_webcam.py
+Video Detection
 
-Run detection on an existing video file:
+Run detection on a video file:
 
-```bash
 python person_video.py
-```
-
-⏹️ Exit the Program
-
-Press q on your keyboard anytime to stop detection and close the window.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## 📊 Results
-
-- Persons are detected with bounding boxes and labels (Person 1, Person 2, etc.)
-
-- The total number of persons per frame is displayed
-
-- Works on both live webcam and offline videos
-  
-- Demo Video
-
-https://github.com/user-attachments/assets/30f4c927-cfbb-4c75-9926-61253849984e
+⌨️ Controls
+Key	Action
+q	Exit the program
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📸 Output
 
-## 📚 References
+The system:
 
-- https://thedatafrog.com/en/articles/human-detection-video/  
+Detects all persons in each frame
+Draws bounding boxes around detected people
+Displays total number of persons detected
+🧠 Model Used
 
-- https://docs.ultralytics.com/tasks/detect/
+This project uses YOLOv8n, a lightweight and fast object detection model from Ultralytics.
 
-- https://thesai.org/Downloads/Volume16No5/Paper_14-Human_Detection_and_Tracking_with_YOLO.pdf
+You can also replace it with:
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+yolov8s.pt
+yolov8m.pt
+yolov8l.pt
 
-## 👤 Author
+for higher accuracy.
 
-Muqadas Ejaz
-
-BS Computer Science (AI Specialization)
-
-AI/ML Engineer
-
-Data Science & Gen AI Enthusiast
-
-📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/muqadasejaz/)  
-
-🌐 GitHub: [github.com/muqadasejaz](https://github.com/muqadasejaz)
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-## 📎 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
+📚 References
+Ultralytics Documentation
+OpenCV Documentation
+YOLOv8 Object Detection Research
+🌟 Future Improvements
+Phone detection
+Face detection
+Person tracking
+Suspicious activity detection
+AI-based exam proctoring
